@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head><body>
+<div class="app"><p id="tdy">☃️Today's Weather</p>
+    <center><input type="text" id="cityinput" placeholder="🔎Search for a City">
+    <button id="searchbtn">Search</button></center>
+
+    <div class="current-temp" >
+        
+    <center><h1 style="padding-top:1cm ;" >Weather Report</h1></center>
+    <div class="mainrow">
+        <p id="place">📌Chennai,TN,IN</p>
+<p id="date">🗓️ Sunday 22 November</p>
+</div>
+<p id="emoji">☀️</p>   
+<p id="temp">31°C</p>
+<p id="condition"> Sunny</p>
+<p style="position:absolute; left:8cm;top: 8.5cm;">_____________________________________________________________________________________________________________</p>
+<p id="feels">🌡️Feels Like  ~35°C </p>
+<p id="humidity">💧Humidity  ~54%</p>
+<p id="rise">🌞Sun Rise 6:00am(ist)</p>
+<p id="set">🌇SunSet 6:30pm(ist)</p>
+    </div>
+    
+    <button onclick="nextDay()" id="rightbtn">></button>
+        <button onclick="previousDay()" id="leftbtn"><</button>
+    <div class="forecast"><h2 id="wea">❄️7 Days Weather Forecast❄️</h2>
+<div id="day1"><p style="font-size: 30px;">Mon,23</p>☀️<br>30°C</div>
+<div id="day2"><p style="font-size: 30px;">Tue,24</p>🌤️<br>28°C</div>
+<div id="day3"><p style="font-size: 30px;">Wed,25</p>☁️<br>32°C</div>
+<div id="day4"><p style="font-size: 30px;">Thu,26</p>🌧️<br>29°C</div>
+<div id="day5"><p style="font-size: 30px;">Fri,27</p>☀️<br>30°C</div>
+<div id="day6"><p style="font-size: 30px;">Sat,28</p>🌧️<br>28°C</div>
+<div id="day7"><p style="font-size: 30px;">Sun,29</p>☁️<br>32°C</div>
+
+</div>
+</div>
+
+</body>
+</html>
