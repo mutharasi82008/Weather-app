@@ -1,0 +1,350 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+margin: 0;
+background-color: black;
+color: aliceblue;
+overflow-x: hidden;
+}
+.app{
+    min-height: 100vh;
+    padding: 16px;
+    background-color: black;
+}
+#tdy{
+    
+    display:flex;
+    position:absolute;
+    left:2cm; 
+    font-size: 30px;
+}
+#searchbtn{
+    padding: 7px;
+    background-color: blue;
+    align-items: center;
+    border-color:1px solid whitesmoke;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+-webkit-text-fill-color: white;
+   border-radius: 50px;
+}
+
+#cityinput{
+    flex: 1;
+border-radius: 5px;
+border:1px solid black;
+font-size: 20px;
+padding: 10px; 
+width: 600px;
+height:1cm; 
+margin-top: 30px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    
+}
+.current-temp{
+    width:37cm;
+    height:10cm;
+margin-left: 1cm;
+   background-image: linear-gradient(to right, rgb(20, 20, 145),rgb(35, 35, 148),rgb(70, 70, 221),rgb(57, 57, 253),rgb(37, 198, 239));
+    border-radius: 20px;
+    -webkit-text-fill-color: white;
+    
+}
+#wea{
+color:antiquewhite;
+ margin-top:0.01cm; 
+position:relative;
+left:  4cm;
+}
+#leftbtn{
+    width: 1cm;
+    height: 1cm;
+    background-color:white;
+    border-radius: 50px;
+    position: relative;
+    bottom: 6cm;
+    left: 2cm;
+    font-size: 20px;
+
+}
+#rightbtn{
+    width: 1cm;
+    height: 1cm;
+    background-color:white;
+    border-radius: 50px;
+    position: relative;
+     bottom: 6cm;
+    left: 35cm;
+    font-size: 20px;
+}
+#rightbtn:hover,#leftbtn:hover{
+    background-color: rgb(205, 166, 150);
+}
+#place{
+    font-family:helvetica;
+    position:absolute;
+    top: 5cm;
+    left: 8cm;
+    font-size: 30px;
+
+    
+}
+#date{
+    font-family:'Times New Roman', Times, serif;
+    position: absolute;
+    top:6.5cm;
+    left: 8cm;
+    font-size: 20px;
+}
+#emoji{
+    font-family:arial;
+    font-size: 80px;
+    position: absolute;
+    display: flex;
+    left: 22cm;
+    top: 3.5cm;
+}
+
+#temp{
+    font-family:calibri;
+    font-size: 60px;
+    position: absolute;
+    display: flex;
+    left: 25cm;
+top: 4cm;
+    
+
+}
+#condition{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    position: absolute;
+display: flex;
+    left: 25cm;
+top: 6cm;
+}
+#feels{
+    font-family:cursive;
+    font-size: 20px;
+    position: absolute;
+display: flex;
+    left: 10cm;
+top: 10cm;
+}
+#humidity{
+    font-family:cursive;
+    font-size: 20px;
+    position: absolute;
+display: flex;
+    left: 17cm;
+top: 10cm;
+}
+#rise{
+    font-family:cursive;
+    font-size: 20px;
+    position: absolute;
+display: flex;
+    left: 23cm;
+top: 10cm;
+}
+#set{
+    font-family:cursive;
+    font-size: 20px;
+    position: absolute;
+display: flex;
+    left: 23cm;
+top: 11cm;
+}
+#day1{
+    margin-left: 1cm;
+    padding-left: 0.5cm;
+    border-radius: 20px;
+    font-size:40px;
+left:3cm;
+display: block;
+position:absolute;
+    width: 3.5cm;
+    height: 5.5cm;
+border-style: double;
+    border-color:1px whitesmoke;
+    background-image:linear-gradient(to bottom,rgb(42, 161, 212),rgb(113, 194, 214));
+}
+#day2{
+    margin-left: 1cm;
+    border-radius: 20px;
+    padding-left: 0.5cm;
+ 
+position: absolute;
+display: block;
+left: 8cm;
+    font-size:40px;
+    width: 3.5cm;
+    height: 5.5cm;
+    border-style: double;
+    border-color:1px whitesmoke;
+    background-image:linear-gradient(to bottom,rgb(31, 133, 173),rgb(113, 194, 214));
+}
+#day3{
+    margin-left: 1cm;
+    border-radius: 20px;
+    padding-left: 0.5cm;
+border-style: double;
+    border-color:1px whitesmoke;
+position: absolute;
+display: block;
+left: 13cm;
+    font-size:40px;
+    width: 3.5cm;
+    height: 5.5cm;
+    background-image:linear-gradient(to bottom,rgb(55, 68, 184),rgb(113, 194, 214));
+}
+#day4{
+    margin-left: 1cm;
+    border-radius: 20px;
+    border-style: double;
+    border-color:1px whitesmoke;
+    padding-left: 0.5cm;
+ 
+position: absolute;
+display: block;
+left:18cm;
+    font-size:40px;
+    width: 3.5cm;
+    height: 5.5cm;
+    background-image:linear-gradient(to bottom,rgb(16, 45, 190),rgb(56, 143, 165));
+}
+#day5{
+    margin-left: 1cm;
+    border-radius: 20px;
+    border-style: double;
+    border-color:1px whitesmoke;
+    padding-left: 0.5cm;
+ 
+position: absolute;
+display: block;
+left: 23cm;
+    font-size:40px;
+    width: 3.5cm;
+    height: 5.5cm;
+    background-image:linear-gradient(to bottom,rgb(42, 161, 212),rgb(113, 194, 214));
+}
+#day6{
+    margin-left: 1cm;
+    border-radius: 20px;
+    border-style: double;
+    border-color:1px whitesmoke;
+    padding-left: 0.5cm;
+ 
+position: absolute;
+display: block;
+left: 28cm;
+    font-size:40px;
+    width: 3.5cm;
+    height: 5.5cm;
+    background-image:linear-gradient(to bottom,rgb(16, 45, 190),rgb(56, 143, 165));
+}
+#day7{
+    margin-left: 1cm;
+    border-radius: 20px;
+    border-style: double;
+    border-color:1px whitesmoke;
+    padding-left: 0.5cm;
+ 
+position: absolute;
+display: block;
+left: 33cm;
+    font-size:40px;
+    width: 3.5cm;
+    height: 5.5cm;
+    background-image:linear-gradient(to bottom,rgb(55, 68, 184),rgb(113, 194, 214));
+}
+#day1:hover,#day2:hover,#day3:hover,#day4:hover,#day5:hover,#day6:hover,#day7:hover{
+ transform: scale(1.1);
+ box-shadow: rgb(125, 204, 196);
+}
+
+     @media (max-width: 600px) {
+
+  html, body { overflow-x: hidden; }
+
+  body > div {
+    height: auto !important;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #cityinput {
+    width: 65% !important;
+    font-size: 16px;
+  }
+
+  .current-temp {
+    width: auto;
+    height: auto;
+    margin: 15px 0;
+    padding: 15px;
+  }
+
+  .current-temp p {
+    position: static !important;
+    display: block;
+    margin: 8px 0;
+    text-align: center;
+  }
+
+  .current-temp p[style] { display: none; }
+
+  #place { font-size: 22px; }
+  #temp 
+  {
+     font-size: 45px;
+
+}
+  #condition { font-size: 28px; }
+  #emoji { font-size: 60px; }
+
+   #rightbtn,#leftbtn {
+    position: static;
+    margin: 8px;
+  }
+
+  .forecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+
+  #day1, #day2, #day3, #day4, #day5, #day6, #day7 {
+    position: static !important;
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 10px;
+    width: calc(33.33% - 10px);
+    height: auto;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  #day1 p, #day2 p, #day3 p, #day4 p,
+  #day5 p, #day6 p, #day7 p {
+    font-size: 16px !important;
+  }
+  #wea{
+    position: static !important;
+    font-size: 20 px !important;
+    text-align: center;
+  }
+  #tdy{
+position: static !important;
+    font-size: 20 px !important;
+    text-align: center;
+    margin: 0%;    
+  }
+}
