@@ -1,3 +1,4 @@
+/*javascript*/
 let days = [
     { date: "🗓️ Sunday 23 November",  temp: "31°C",emoji: "☀️",condition: "Sunny",humidity:"💧 Humidity ~40",feels:"🌡️ Feels like ~34°C",rise:"🌞Sun Rise 5:15am(ist)",set:"🌇SunSet 6:43pm(ist)" },
     { date: "🗓️ Monday 23 November",  temp: "30°C",emoji: "☀️",condition: "Sunny",humidity:"💧 Humidity ~55",feels:"🌡️ Feels like ~32°C",rise:"🌞Sun Rise 5:35am(ist)",set:"🌇SunSet 6:45pm(ist)" },
